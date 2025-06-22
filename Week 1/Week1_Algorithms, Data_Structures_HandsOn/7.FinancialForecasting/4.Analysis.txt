@@ -1,0 +1,24 @@
+4. Analysis
+
+Q. Discuss the time complexity of your recursive algorithm.
+
+=> Time Complexity:
+	T(n) = T(n−1) + 1 ⇒ O(n) 
+      since one recursive call is made per year.
+
+
+Q. Explain how to optimize the recursive solution to avoid excessive computation.
+
+=> Optimization (If required): Incase of repeated subproblems or large inputs.
+Step 1: Use memoization (i.e. store intermediate results).
+Step 2: Convert to iterative solution for better space usage.
+Step 3: Use Math.pow() for a direct solution:
+            P × Math.pow(1 + r, n) → O(1)
+
+Code:
+ 
+public static double forecast(double principal, double rate, int years){
+	for(int i=0; i<years; i++)
+		principal* = (1 + rate);
+	return principal;
+}

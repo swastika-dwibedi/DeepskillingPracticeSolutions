@@ -1,0 +1,7 @@
+1.Understand Recursive Algorithms
+
+Q. Explain the concept of recursion and how it can simplify certain problems.
+
+=> Recursion is a technique where a method calls itself to solve a smaller subproblem of the original problem. Recursion is ideal for problems that have a repetitive pattern, like calculating compound growth, Fibonacci, or tree traversal. It reduces code complexity by eliminating loops in some cases.
+
+

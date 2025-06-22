@@ -1,0 +1,13 @@
+4. Analysis
+
+Q. Compare the time complexity of linear and binary search algorithms.
+
+Algorithm	Best Case	Average Case	Worst Case
+Linear Search	   O(1)		    O(n)	   O(n)
+Binary Search	   O(1)		  O(log n)	 O(log n)
+where n is the number of searching elements.
+
+
+Q. Discuss which algorithm is more suitable for your platform and why.
+
+=> Binary search is more suitable than linear search because it takes lesser time to search an element in the dataset.
