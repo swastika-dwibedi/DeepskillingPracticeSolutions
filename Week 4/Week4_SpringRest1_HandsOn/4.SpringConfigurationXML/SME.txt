@@ -1,0 +1,25 @@
+EXPLANATIONS:
+
+<bean> tag - Declares an object to be managed by Spring IoC container.
+
+id attribute - Unique name used to retrieve the bean (context.getBean("country")).
+
+class attribute - Fully‑qualified Java type to instantiate via reflection.
+
+<property> tag - Performs setter injection after the bean’s constructor runs.
+
+name attribute - Matches the Java setter (setCode, setName).
+
+value attribute - Literal value assigned to the property.
+
+ApplicationContext - Central IoC container interface (builds & wires beans, provides AOP, i18n, resource loading).
+
+ClassPathXmlApplicationContext - Implementation that locates XML configs on the classpath and eagerly instantiates singleton beans.
+
+
+What exactly happens when context.getBean() is invoked?
+=> 1. Looks up bean definition by id.
+   2. Creates instance if not already built(singleton scope).
+   3. Performs Dependency injection(properties/constructor args).
+   4. Executes BeanPostProcessors, lifecycle callbacks(@PostConstruct, init-method).
+   5. Casts/returns fully initialized object.
