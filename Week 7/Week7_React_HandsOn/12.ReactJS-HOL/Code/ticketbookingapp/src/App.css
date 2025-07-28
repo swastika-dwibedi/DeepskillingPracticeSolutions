@@ -1,0 +1,33 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color:white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.greeting {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: black;
+  border-radius: 5px;
+  
+  color: black;
+}
+
+
